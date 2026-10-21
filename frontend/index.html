@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revision Database</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="hero">
+            <h1>Revision Notebook</h1>
+            <p>Semantic search and RAG-powered glossary</p>
+        </div>
+
+        <div class="query-container">
+            <form class="query-form">
+                <input type="text" id="query-input" placeholder="What would you like to know?">
+                <button type="submit" id="submit-query">Ask</button>
+            </form>
+            <div id="query-results" class="results-box">
+                <p class="placeholder-text">Your answer will appear here...</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="file-management">
+            <h2>Document Library</h2>
+            <div class="upload-container">
+                <div class="upload-fields">
+                    <input type="text" id="category-input" placeholder="Category (Required)">
+                    <input type="text" id="subject-input" placeholder="Subject (Required)">
+                </div>
+                <div class="upload-actions">
+                    <input type="file" id="file-input" hidden>
+                    <button class="upload-btn" id="select-file-btn" onclick="document.getElementById('file-input').click()">
+                        <span>+ Select Document</span>
+                    </button>
+                    <button class="submit-btn" id="submit-upload-btn">Upload</button>
+                </div>
+                <div id="selected-file-name" class="selected-file-text">No file selected</div>
+            </div>
+            <ul id="file-list" class="file-list">
+                <!-- File elements will be injected here -->
+                <li class="file-item placeholder">No documents uploaded yet.</li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="/static/scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+.venv/
+__pycache__/
+*.py[cod]
+.env
+uploads/
+
+# Test Data
+test_data_*.csv
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Frontend build
+dist/
+build/
+node_modules/
+test_data/
+.vscode/
+local_markdowns/
