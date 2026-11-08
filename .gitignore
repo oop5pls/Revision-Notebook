@@ -24,3 +24,5 @@ node_modules/
 test_data/
 .vscode/
 local_markdowns/
+
+chroma_data/
