@@ -1,0 +1,2 @@
+ALTER TABLE terms 
+ALTER COLUMN term_id TYPE TEXT USING term_id::TEXT;
